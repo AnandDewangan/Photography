@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sub{
+    display: flex;
+    background-color: black;
+    color: white;
+    grid-template-columns: 100px auto;
+    justify-content: space-evenly;
+    animation-name: demo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes demo{
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: tomato;
+    }
+    40%{
+        background-color: rgb(8, 133, 8);
+    }
+    60%{
+        background-color: rgb(194, 61, 4);
+    }
+    80%{
+        background-color: rgb(21, 186, 123);
+    }
+    92%{
+        background-color: rgb(104, 0, 139);
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.sub h1{
+    font-family: 'Great Vibes', cursive;
+}
+
+.sub h1 span{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-weight: bold;
+    flex-wrap: wrap;
+    background-color: goldenrod;
+}
+
+.main nav ul li{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.main nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.main nav ul li:hover{
+    animation-name: demo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+main .photographs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url(hd-wallpaper-g64c85796a_1920.jpg);
+    backdrop-filter: invert(80%);
+    background-size: cover;
+}
+
+main .photographs img{
+    height: 43vh;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 3px 3px 5px 6px black;
+    background-color: black;
+    cursor: pointer;
+}
+
+main .photographs img:hover{
+    animation-name: demo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+h3{
+    font-size: 2rem;
+    text-align: center;
+    animation-name: demo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+#about article p{
+    font-weight: bold;
+    word-spacing: 5px;
+    padding: 5px;
+}
+
+footer{
+    background-color: gray;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
